@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo form và các điều khiển</title>
+</head>
+<body>
+    <h2>Đăng ký du lịch</h2>
+    <form action="">
+        <table style="background-color: burlywood; cellpadding="3" cellspacing="0" border="1">
+<tr>
+    <td>Họ và tên</td>
+    <td><input type="text" value="Tran Van Huy" size="50px"></td>
+</tr>
+<tr>
+    <td>Địa chỉ</td>
+    <td><input type="text" value="Hanoi" size="30px"></td>
+</tr>
+<tr>
+    <td>Điện Thoại</td>
+    <td><input type="number"></td>
+</tr>
+<tr><td>Khách Việt Nam</td>
+    <td><input type="radio"></td>
+</tr>
+<tr>
+    <td>Chọn Tour</td>
+    <td><select>
+        <optgroup label="Miền Bắc">
+        <option value="mienbac">Hà Nội - Hạ Long - Sapa</option>
+        <option value="mienbac">Hà Nội - Chùa Hương - Ninh Bình</option>
+        <option value="mienbac">Hà Nội - Cát Bà - Tuân Châu</option>
+
+
+    </optgroup>
+    <optgroup label="Miền Trung">
+        <option value="mientrung">Huế - Bạch Mã - Đà Nẵng
+        </option>
+        <option value="mientrung">Nha Trang - Đà Lạt</option>
+        <option value="mientrung">Buôn Mê Thuột - Gia Lai - KonTum</option>
+
+    </optgroup>
+    <optgroup label="Miền Nam">
+        <option value="miennam">TP.Hồ Chí Minh - Cần Thơ - Cà Mau</option>
+        <option value="miennam">TP.Hồ Chí Minh - Mỹ Tho</option>
+
+    </optgroup>
+    </select></td>
+</tr>
+<tr>
+    <td>Phương tiện</td>
+    <td><input type="radio" id="maybay" name="phuongtien">Máy Bay <input type="radio" id="xeoto" name="phuongtien">Xe Ô Tô</td>
+</tr>
+<tr>
+    <td colspan="2" style="width: 350px; height: 55px;" ><fieldset>
+        <legend style="color:darkorange;" ><i>Số lượng đoàn khách</i></legend>
+        Người lớn<input type="text" id="nguoilon" size="10px" >Trẻ em<input type="text" size="10px">
+    </fieldset></td>
+</tr>
+<tr>
+    <td>Ghi chú thêm</td>
+    <td>
+        <textarea style="width: 300px;" name="note" id="ghichuthem" cols="33" rows="6"></textarea>
+        
+    </td>
+    
+</tr>
+<tr>
+    <td style="text-align: center;" colspan="2">
+        <button type="button" onclick="document.getElementById('demo').innerHTML='Truy cập thành công'">Đồng Ý</button>
+        <p style="color: blue;" id="demo"></p>
+    </td>
+</tr>
+        </table>
+    </form>
+</body>
+</html>
